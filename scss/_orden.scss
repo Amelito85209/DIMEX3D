@@ -1,0 +1,320 @@
+// _orden.scss
+@use 'variables' as v;
+
+// Contenedor del encabezado
+.header-principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+}
+// _orden.scss
+
+.logo {
+  margin: 0;
+  font-size: 40px;      // Este es el tamaño original
+  font-weight: bold;
+  text-align: left;    // Mantener a la izquierda en el header
+}
+
+.titulo-centro {
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+  font-size: 4rem;      // El tamaño gigante del título principal
+  letter-spacing: 2px;
+}
+
+.subtitulo-centro {
+  text-align: center;   // Esto centrará "Trabajos Realizados"
+  width: 100%;
+  margin-top: 50px;
+  font-size: 3rem;      // Tamaño original del subtítulo
+  letter-spacing: 2px;
+}
+// Menú de navegación en fila
+.barra-flex {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+// Títulos y textos centrados
+.contenido-centro {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+
+  p {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-top: 60px;
+  }
+}
+
+// Sistema de fotos (Grid)
+.foto_inicio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); // Las 3 columnas originales
+  gap: 80px;
+  justify-items: center;
+  padding: 80px;
+}
+
+.img_inicio {
+  width: 100%;
+  
+  img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+    border: 2px solid #6b6860;
+  }
+}
+
+
+// _orden.scss (Sección de Contacto/Redes)
+
+.redes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); // Las 4 columnas de iconos
+  gap: 20px;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.red-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+
+  .icono-red {
+    width: 40px; // Tamaño de tus iconos de redes
+    height: auto;
+  }
+}
+
+// _orden.scss (Sobre Nosotros)
+
+.foto-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+
+  p {
+    flex: 1;
+    max-width: 600px;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
+.img-foto {
+  width: 350px; // Ancho de tu foto de perfil
+  height: auto;
+  border: 4px solid #6b6860;
+  border-radius: 20px;
+}
+// --- SECCIÓN COTIZAR TU PIEZA ---
+
+.main-cotiza {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 180px 5%;
+  align-items: flex-start;
+}
+
+.seccion-izquierda {
+  flex: 1;
+  max-width: 400px;
+
+  .titulo-cotiza {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    color: #000000;
+  }
+
+  .contenedor-imagen img {
+    width: 100%;
+    height: auto;
+    background-color: #eee;
+    display: block;
+  }
+}
+
+.form-cotiza {
+  flex: 2;
+  display: flex;
+  gap: 30px;
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 15px;
+  }
+}
+
+.columna-datos {
+  flex: 1;
+}
+
+.input-box {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f0efef; // El color original de tus inputs
+  border-radius: 20px;
+}
+
+.columna-archivo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  .area-archivo {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    background-color: #f0efef;
+    resize: none;
+    border-radius: 20px;
+  }
+}
+// --- SECCIÓN SOBRE NOSOTROS ---
+
+// Grid de Servicios (3 columnas)
+.contenedor-nosotros-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 0 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.columna-item {
+  text-align: center;
+
+  h2 {
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+  }
+
+  img {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 2px solid #6b6860;
+  }
+
+  p {
+    font-weight: 500;
+    color: #333;
+    line-height: 1.6;
+    font-size: 1.05rem;
+    padding: 0 10px;
+  }
+}
+
+// Bio Personal (Foto + Texto)
+.foto-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+
+  p {
+    flex: 1;
+    max-width: 600px;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
+.img-foto {
+  width: 350px;
+  height: auto;
+  border: 4px solid #6b6860;
+  border-radius: 20px;
+}
+
+.titulo-nosotros {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+// --- RESPONSIVE (MÓVIL) ---
+@media (max-width: 800px) {
+  .contenedor-nosotros-grid {
+    grid-template-columns: repeat(3, 1fr); // Mantiene 3 columnas según tu código original
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .columna-item img {
+    height: auto;
+    aspect-ratio: 1/1;
+  }
+
+  .foto-contenedor {
+    flex-direction: column; // Foto arriba, texto abajo en móvil
+    gap: 20px;
+  }
+
+  .img-foto {
+    width: 80%;
+    max-width: 300px;
+  }
+}
+@media (max-width: 800px) {
+  .redes-grid {
+    grid-template-columns: repeat(2, 1fr); // 2 filas de 2 iconos en móvil
+    gap: 30px;
+  }
+
+  .foto-contenedor {
+    flex-direction: column; // Foto arriba, texto abajo en móvil
+    gap: 20px;
+  }
+
+  .img-foto {
+    width: 80%;
+    max-width: 300px;
+  }
+}
+@media (max-width: 800px) {
+  .main-cotiza {
+    flex-direction: column; // La imagen arriba y el formulario abajo
+    align-items: center;
+    padding: 20px;
+  }
+
+  .form-cotiza {
+    flex-direction: column; // Los campos se ponen uno debajo del otro
+    width: 100%;
+  }
+
+  .seccion-izquierda {
+    max-width: 100%;
+    text-align: center;
+  }
+}

@@ -1,64 +1,26 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap");
-
-
-body {
-  background-color: #ece4d9;
-  color: #333;
-  line-height: 1.6;
-}
-
-.botones {
+.botones, .btn-enviar {
   text-decoration: none;
   background-color: #6366F1;
-  color: white;
+  color: #ffffff;
   padding: 10px 20px;
   border-radius: 5px;
   font-weight: bold;
   text-transform: uppercase;
   transition: 0.3s;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
 }
 
-.contenido-centro {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.contenido-centro p {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  margin-top: 60px;
-}
-
-.tipografiaNunito {
-  font-family: "Nunito", sans-serif;
-}
-
-.tipografiaRoboto {
-  font-family: "Roboto Flex", sans-serif;
-}
-
-.foto_inicio {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 80px 80px;
-  justify-items: center;
-  padding: 80px;
-}
-
-.img_inicio {
-  width: 100%;
-}
-
-.img_inicio img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  display: block;
-  border-radius: 20px;
-  border: 2px solid #6b6860;
+.btn-enviar {
+  padding: 15px 32px;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  border: none;
+  margin: 50px 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .header-principal {
@@ -72,15 +34,7 @@ body {
   margin: 0;
   font-size: 40px;
   font-weight: bold;
-}
-
-.barra-flex {
-  display: flex;
-  list-style: none;
-  gap: 15px;
-  /* Si quiero modificar el espacio entre botones */
-  margin: 0;
-  padding: 0;
+  text-align: left;
 }
 
 .titulo-centro {
@@ -99,6 +53,89 @@ body {
   letter-spacing: 2px;
 }
 
+.barra-flex {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.contenido-centro {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+.contenido-centro p {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+
+.foto_inicio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+  justify-items: center;
+  padding: 80px;
+}
+
+.img_inicio {
+  width: 100%;
+}
+.img_inicio img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+  border: 2px solid #6b6860;
+}
+
+.redes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.red-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}
+.red-item .icono-red {
+  width: 40px;
+  height: auto;
+}
+
+.foto-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+}
+.foto-contenedor p {
+  flex: 1;
+  max-width: 600px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.img-foto {
+  width: 350px;
+  height: auto;
+  border: 4px solid #6b6860;
+  border-radius: 20px;
+}
+
 .main-cotiza {
   display: flex;
   justify-content: center;
@@ -111,15 +148,13 @@ body {
   flex: 1;
   max-width: 400px;
 }
-
-.titulo-cotiza {
+.seccion-izquierda .titulo-cotiza {
   font-size: 2.5rem;
   margin-bottom: 20px;
   margin-left: 60px;
   color: #000000;
 }
-
-.contenedor-imagen img {
+.seccion-izquierda .contenedor-imagen img {
   width: 100%;
   height: auto;
   background-color: #eee;
@@ -131,7 +166,6 @@ body {
   display: flex;
   gap: 30px;
 }
-
 .form-cotiza label {
   display: block;
   font-weight: bold;
@@ -156,28 +190,13 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-
-.area-archivo {
+.columna-archivo .area-archivo {
   width: 100%;
   height: 200px;
   padding: 10px;
-  background-color: rgb(240, 240, 240);
+  background-color: #f0efef;
   resize: none;
   border-radius: 20px;
-}
-
-.btn-enviar {
-  display: inline-block;
-  background-color: #6366F1;
-  color: #ffffff;
-  padding: 15px 32px;
-  border-radius: 10px;
-  font-size: 1.4rem;
-  border: none;
-  transition: all 0.3s ease-in-out;
-  margin-bottom: 50px;
-  margin-top: 50px;
 }
 
 .contenedor-nosotros-grid {
@@ -192,13 +211,10 @@ body {
 .columna-item {
   text-align: center;
 }
-
 .columna-item h2 {
   margin-bottom: 30px;
   font-size: 1.8rem;
-
 }
-
 .columna-item img {
   width: 100%;
   height: 450px;
@@ -207,7 +223,6 @@ body {
   border-radius: 20px;
   border: 2px solid #6b6860;
 }
-
 .columna-item p {
   font-weight: 500;
   color: #333;
@@ -215,28 +230,6 @@ body {
   font-size: 1.05rem;
   padding: 0 10px;
 }
-
-.redes-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  max-width: 900px;
-  margin: 40px auto;
-}
-
-.red-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 15px;
-}
-
-.icono-red {
-  width: 40px;
-  height: auto;
-}
-
 
 .foto-contenedor {
   display: flex;
@@ -247,15 +240,6 @@ body {
   margin: 50px auto;
   padding: 20px;
 }
-
-.img-foto {
-  width: 350px;
-  height: auto;
-  border: 4px solid #6b6860;
-  box-sizing: border-box;
-  border-radius: 20px;
-}
-
 .foto-contenedor p {
   flex: 1;
   max-width: 600px;
@@ -263,93 +247,85 @@ body {
   text-align: center;
 }
 
+.img-foto {
+  width: 350px;
+  height: auto;
+  border: 4px solid #6b6860;
+  border-radius: 20px;
+}
+
 .titulo-nosotros {
   margin-top: 10px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
-@media (min-width: 320px) and (max-width: 800px) {
-  p {
-    font-size: 18px;
-    padding: 0 10px;
-  }
-
-  .logo {
-    font-size: 28px;
-  }
-
-  .titulo-centro,
-  .subtitulo-centro {
-    font-size: 24px;
-  }
-
-  /* Header y Navegación */
-  .header-principal {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .barra-flex {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .foto_inicio,
+@media (max-width: 800px) {
   .contenedor-nosotros-grid {
     grid-template-columns: repeat(3, 1fr);
-    /* Mantiene las 3 columnas */
     gap: 15px;
-    /* Reducimos el espacio para que quepan bien en pantallas pequeñas */
     padding: 10px;
   }
-
   .columna-item img {
     height: auto;
     aspect-ratio: 1/1;
-    /* Mantiene las fotos cuadradas y uniformes */
   }
-
-  .columna-item {
-    font-size: 14px;
+  .foto-contenedor {
+    flex-direction: column;
+    gap: 20px;
   }
-
-  /* Evita que las fotos se estiren feo */
-  /* Sección Cotiza (Formulario) */
+  .img-foto {
+    width: 80%;
+    max-width: 300px;
+  }
+}
+@media (max-width: 800px) {
+  .redes-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .foto-contenedor {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .img-foto {
+    width: 80%;
+    max-width: 300px;
+  }
+}
+@media (max-width: 800px) {
   .main-cotiza {
     flex-direction: column;
     align-items: center;
     padding: 20px;
   }
-
   .form-cotiza {
     flex-direction: column;
-    /* Datos arriba, archivo abajo */
     width: 100%;
   }
-
   .seccion-izquierda {
     max-width: 100%;
     text-align: center;
   }
+}
+body {
+  background-color: #ece4d9;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
 
-  /* Redes Sociales */
+@media (max-width: 800px) {
   .redes-grid {
     grid-template-columns: repeat(2, 1fr);
-    /* 2x2 en lugar de 4 en fila */
     gap: 30px;
   }
-
-  /* Foto con texto (Footer/Bio) */
   .foto-contenedor {
     flex-direction: column;
     gap: 20px;
   }
-
   .img-foto {
     width: 80%;
-    /* Más pequeña en móvil */
     max-width: 300px;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
