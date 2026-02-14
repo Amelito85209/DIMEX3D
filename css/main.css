@@ -1,0 +1,292 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap");
+.grisfondo {
+  background-color: rgb(164, 147, 147);
+}
+
+p {
+  font-size: 30px;
+}
+
+.tipografiaNunito {
+  font-family: "Nunito", sans-serif;
+}
+
+.tipografiaRoboto {
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.foto_inicio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px 80px;
+  justify-items: center;
+  padding: 80px;
+}
+
+.img_inicio {
+  width: 100%;
+}
+
+.img_inicio img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  display: block;
+}
+
+.header-principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+}
+
+.logo {
+  margin: 0;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.barra-flex {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  /* Si quiero modificar el espacio entre botones */
+  margin: 0;
+  padding: 0;
+}
+
+.titulo-centro,
+.subtitulo-centro {
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+  font-size: 36px;
+  letter-spacing: 2px;
+}
+
+main p {
+  text-align: center;
+  max-width: 900px;
+  margin: 20px auto;
+  line-height: 1.6;
+}
+
+.main-cotiza {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px 5%;
+  align-items: flex-start;
+}
+
+.seccion-izquierda {
+  flex: 1;
+  max-width: 400px;
+}
+
+.titulo-cotiza {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.contenedor-imagen img {
+  width: 100%;
+  height: auto;
+  background-color: #eee;
+  display: block;
+}
+
+.form-cotiza {
+  flex: 2;
+  display: flex;
+  gap: 30px;
+}
+
+.form-cotiza label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.columna-datos {
+  flex: 1;
+}
+
+.input-box {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f0efef;
+}
+
+.columna-archivo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.area-archivo {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  background-color: rgb(240, 240, 240);
+  resize: none;
+}
+
+.btn-enviar {
+  margin-top: 15px;
+  padding: 10px;
+  font-weight: bold;
+  width: 50;
+  align-self: flex-raw;
+}
+
+.contenedor-nosotros-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 0 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.columna-item {
+  text-align: center;
+}
+
+.columna-item img {
+  width: 100%;
+  height: 450px;
+  margin-bottom: 15px;
+}
+
+.redes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.red-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.icono-red {
+  width: 40px;
+  height: auto;
+}
+
+.btn-violeta-contacto {
+  background-color: #6a5acd;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  width: 120px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.foto-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.img-foto {
+  width: 350px;
+  height: auto;
+}
+
+.foto-contenedor p {
+  flex: 1;
+  max-width: 600px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 800px) {
+  p {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+  .logo {
+    font-size: 28px;
+  }
+  .titulo-centro,
+  .subtitulo-centro {
+    font-size: 24px;
+  }
+  /* Header y Navegación */
+  .header-principal {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .barra-flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .foto_inicio,
+  .contenedor-nosotros-grid {
+    grid-template-columns: repeat(3, 1fr);
+    /* Mantiene las 3 columnas */
+    gap: 15px;
+    /* Reducimos el espacio para que quepan bien en pantallas pequeñas */
+    padding: 10px;
+  }
+  .columna-item img {
+    height: auto;
+    aspect-ratio: 1/1;
+    /* Mantiene las fotos cuadradas y uniformes */
+  }
+  .columna-item {
+    font-size: 14px;
+  }
+  /* Evita que las fotos se estiren feo */
+  /* Sección Cotiza (Formulario) */
+  .main-cotiza {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .form-cotiza {
+    flex-direction: column;
+    /* Datos arriba, archivo abajo */
+    width: 100%;
+  }
+  .seccion-izquierda {
+    max-width: 100%;
+    text-align: center;
+  }
+  /* Redes Sociales */
+  .redes-grid {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2x2 en lugar de 4 en fila */
+    gap: 30px;
+  }
+  /* Foto con texto (Footer/Bio) */
+  .foto-contenedor {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .img-foto {
+    width: 80%;
+    /* Más pequeña en móvil */
+    max-width: 300px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
