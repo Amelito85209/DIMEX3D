@@ -262,6 +262,60 @@
   margin-bottom: 10px;
   text-align: center;
 }
+
+
+.img-salto {
+  position: relative; // Esto mantiene el texto "anclado" a la foto
+  width: 100%;
+  aspect-ratio: 1 / 1; 
+  border-radius: 20px;
+  border: 2px solid #6b6860;
+  overflow: hidden; // Corta la imagen para que no se salga al crecer
+  background-color: #000; // Fondo negro para cuando la imagen se aclare/oscurezca
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease, opacity 0.5s ease; // Animación suave
+    display: block;
+  }
+
+  .info-texto {
+    position: absolute; // Flota sobre la imagen
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; // Invisible al principio
+    transition: opacity 0.5s ease;
+    padding: 20px;
+    pointer-events: none; // Permite que el mouse siga detectando la tarjeta
+
+    p {
+      color: white !important;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-align: center;
+      margin: 0;
+    }
+  }
+
+  // --- EL EFECTO AL PASAR EL MOUSE ---
+  &:hover {
+    img {
+      transform: scale(1.15); // Scale up center
+      opacity: 0.4; // Esto oscurece la imagen (al mostrar el fondo negro del div)
+    }
+
+    .info-texto {
+      opacity: 1; // Aparece el texto
+    }
+  }
+}
 // --- RESPONSIVE (MÓVIL) ---
 @media (max-width: 800px) {
   .contenedor-nosotros-grid {
@@ -299,22 +353,5 @@
   .img-foto {
     width: 80%;
     max-width: 300px;
-  }
-}
-@media (max-width: 800px) {
-  .main-cotiza {
-    flex-direction: column; // La imagen arriba y el formulario abajo
-    align-items: center;
-    padding: 20px;
-  }
-
-  .form-cotiza {
-    flex-direction: column; // Los campos se ponen uno debajo del otro
-    width: 100%;
-  }
-
-  .seccion-izquierda {
-    max-width: 100%;
-    text-align: center;
   }
 }
