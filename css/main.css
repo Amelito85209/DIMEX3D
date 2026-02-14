@@ -148,6 +148,7 @@ body {
   padding: 10px;
   border: 1px solid #ccc;
   background-color: #f0efef;
+  border-radius: 20px;
 }
 
 .columna-archivo {
@@ -156,12 +157,14 @@ body {
   flex-direction: column;
 }
 
+
 .area-archivo {
   width: 100%;
   height: 200px;
   padding: 10px;
   background-color: rgb(240, 240, 240);
   resize: none;
+  border-radius: 20px;
 }
 
 .btn-enviar {
@@ -190,10 +193,27 @@ body {
   text-align: center;
 }
 
+.columna-item h2 {
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+
+}
+
 .columna-item img {
   width: 100%;
   height: 450px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 2px solid #6b6860;
+}
+
+.columna-item p {
+  font-weight: 500;
+  color: #333;
+  line-height: 1.6;
+  font-size: 1.05rem;
+  padding: 0 10px;
 }
 
 .redes-grid {
@@ -233,6 +253,7 @@ body {
   height: auto;
   border: 4px solid #6b6860;
   box-sizing: border-box;
+  border-radius: 20px;
 }
 
 .foto-contenedor p {
@@ -240,6 +261,11 @@ body {
   max-width: 600px;
   font-size: 1.2rem;
   text-align: center;
+}
+
+.titulo-nosotros {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 @media (min-width: 320px) and (max-width: 800px) {
