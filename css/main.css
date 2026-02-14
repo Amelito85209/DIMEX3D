@@ -1,12 +1,35 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap");
 
-.grisfondo {
-  background-color: rgb(164, 147, 147);
+
+body {
+  background-color: #ece4d9;
+  color: #333;
+  line-height: 1.6;
 }
 
-p {
-  font-size: 30px;
+.botones {
+  text-decoration: none;
+  background-color: #6366F1;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.contenido-centro {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contenido-centro p {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  margin-top: 60px;
 }
 
 .tipografiaNunito {
@@ -31,9 +54,11 @@ p {
 
 .img_inicio img {
   width: 100%;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   display: block;
+  border-radius: 20px;
+  border: 2px solid #6b6860;
 }
 
 .header-principal {
@@ -58,27 +83,27 @@ p {
   padding: 0;
 }
 
-.titulo-centro,
+.titulo-centro {
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+
 .subtitulo-centro {
   text-align: center;
   width: 100%;
   margin-top: 50px;
-  font-size: 36px;
+  font-size: 3rem;
   letter-spacing: 2px;
-}
-
-main p {
-  text-align: center;
-  max-width: 900px;
-  margin: 20px auto;
-  line-height: 1.6;
 }
 
 .main-cotiza {
   display: flex;
   justify-content: center;
   gap: 50px;
-  padding: 50px 5%;
+  padding: 180px 5%;
   align-items: flex-start;
 }
 
@@ -90,6 +115,7 @@ main p {
 .titulo-cotiza {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  margin-left: 60px;
   color: #000000;
 }
 
@@ -139,11 +165,16 @@ main p {
 }
 
 .btn-enviar {
-  margin-top: 15px;
-  padding: 10px;
-  font-weight: bold;
-  width: 50;
-  align-self: flex-raw;
+  display: inline-block;
+  background-color: #6366F1;
+  color: #ffffff;
+  padding: 15px 32px;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .contenedor-nosotros-grid {
@@ -186,16 +217,6 @@ main p {
   height: auto;
 }
 
-.btn-violeta-contacto {
-  background-color: #6a5acd;
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  width: 120px;
-  text-align: center;
-  font-size: 0.9rem;
-  font-weight: bold;
-}
 
 .foto-contenedor {
   display: flex;
@@ -210,6 +231,8 @@ main p {
 .img-foto {
   width: 350px;
   height: auto;
+  border: 4px solid #6b6860;
+  box-sizing: border-box;
 }
 
 .foto-contenedor p {

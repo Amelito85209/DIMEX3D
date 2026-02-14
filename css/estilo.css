@@ -2,10 +2,6 @@
 
 
 
-.grisfondo {
-    background-color: rgb(164, 147, 147);
-}
-
 p {
 
     font-size: 30px;
@@ -53,14 +49,6 @@ p {
     font-weight: bold;
 }
 
-.barra-flex {
-    display: flex;
-    list-style: none;
-    gap: 15px;
-    /* Si quiero modificar el espacio entre botones */
-    margin: 0;
-    padding: 0;
-}
 
 
 .titulo-centro,
