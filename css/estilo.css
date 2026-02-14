@@ -253,7 +253,7 @@ main p {
         font-size: 24px;
     }
 
-    /* Header y Navegación */
+
     .header-principal {
         flex-direction: column;
         gap: 20px;
@@ -268,25 +268,25 @@ main p {
     .foto_inicio,
     .contenedor-nosotros-grid {
         grid-template-columns: repeat(3, 1fr);
-        /* Mantiene las 3 columnas */
+
         gap: 15px;
-        /* Reducimos el espacio para que quepan bien en pantallas pequeñas */
+
         padding: 10px;
     }
 
     .columna-item img {
         height: auto;
         aspect-ratio: 1 / 1;
-        /* Mantiene las fotos cuadradas y uniformes */
+
     }
 
     .columna-item {
         font-size: 14px;
     }
 
-    /* Evita que las fotos se estiren feo */
 
-    /* Sección Cotiza (Formulario) */
+
+
     .main-cotiza {
         flex-direction: column;
         align-items: center;
@@ -295,7 +295,7 @@ main p {
 
     .form-cotiza {
         flex-direction: column;
-        /* Datos arriba, archivo abajo */
+
         width: 100%;
     }
 
@@ -304,14 +304,14 @@ main p {
         text-align: center;
     }
 
-    /* Redes Sociales */
+
     .redes-grid {
         grid-template-columns: repeat(2, 1fr);
-        /* 2x2 en lugar de 4 en fila */
+
         gap: 30px;
     }
 
-    /* Foto con texto (Footer/Bio) */
+
     .foto-contenedor {
         flex-direction: column;
         gap: 20px;
@@ -319,7 +319,7 @@ main p {
 
     .img-foto {
         width: 80%;
-        /* Más pequeña en móvil */
+
         max-width: 300px;
     }
 }
