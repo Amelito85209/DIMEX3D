@@ -14,12 +14,12 @@ body {
 }
 @media (max-width: 800px) {
   .redes-grid {
-    grid-template-columns: repeat(2, 1fr); // 2 filas de 2 iconos en móvil
+    grid-template-columns: repeat(2, 1fr); 
     gap: 30px;
   }
 
   .foto-contenedor {
-    flex-direction: column; // Foto arriba, texto abajo en móvil
+    flex-direction: column; 
     gap: 20px;
   }
 

@@ -1,23 +1,23 @@
-// _botonymas.scss
+
 @use 'variables' as v;
 
 .botones {
   text-decoration: none;
-  background-color: v.$primary-color; // El azul #6366F1
+  background-color: v.$primary-color; 
   color: v.$white;
   padding: 10px 20px;
   border-radius: 5px;
   font-weight: bold;
   text-transform: uppercase;
   transition: 0.3s;
-  display: inline-block; // Esto es clave para que respeten el margen
+  display: inline-block; 
   border: none;
   cursor: pointer;
 }
 
-// _botonymas.scss
+
 .btn-enviar {
-  @extend .botones; // Hereda el azul #6366F1
+  @extend .botones; 
   padding: 15px 32px;
   border-radius: 10px;
   font-size: 1.4rem;

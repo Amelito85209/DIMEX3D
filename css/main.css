@@ -305,6 +305,37 @@
   opacity: 1;
 }
 
+.footer-basico {
+  background-color: #6366F1;
+  padding: 30px 20px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: auto;
+}
+.footer-basico .redes-simples {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.footer-basico .redes-simples a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.footer-basico p {
+  color: white;
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+.footer-basico .copyright {
+  font-size: 0.75rem !important;
+  opacity: 0.8;
+  margin-top: 15px !important;
+}
+
 @media (max-width: 800px) {
   .contenedor-nosotros-grid {
     grid-template-columns: repeat(3, 1fr);
